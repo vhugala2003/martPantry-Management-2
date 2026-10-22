@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#F7F8F4">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Settings &amp; Preferences"
+        android:textColor="#244B38"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:paddingBottom="16dp" />
+
+    <Switch
+        android:id="@+id/switchAlerts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enable Expiring-Soon Alerts"
+        android:textSize="16sp"
+        android:textColor="#1F2937"
+        android:paddingBottom="16dp"
+        android:checked="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Default Unit System"
+        android:textColor="#244B38"
+        android:textStyle="bold"
+        android:paddingBottom="4dp" />
+
+    <RadioGroup
+        android:id="@+id/rgUnits"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="16dp">
+
+        <RadioButton
+            android:id="@+id/rbMetric"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Metric (g, ml, cups)"
+            android:checked="true"
+            android:textColor="#374151" />
+
+        <RadioButton
+            android:id="@+id/rbImperial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Imperial (oz, lbs, fl oz)"
+            android:textColor="#374151" />
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#DCE5DD"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="About Smart Pantry Manager"
+        android:textColor="#244B38"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:paddingBottom="4dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Version 1.0\nHelps reduce food waste by strictly matching your pantry ingredients to delicious recipes."
+        android:textSize="14sp"
+        android:textColor="#4B5563"
+        android:lineSpacingExtra="4dp"
+        android:paddingBottom="24dp" />
+
+    <Button
+        android:id="@+id/btnBackMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back to Pantry"
+        android:backgroundTint="#286747"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>
